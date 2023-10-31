@@ -56,8 +56,8 @@ function App() {
     return (
         <div className="App">
             <Slider {...settings}>
-                {dataDigitalBestSeller.map((item) => (
-                    <div className="card">
+                {dataDigitalBestSeller.map((item, key) => (
+                    <div className="card" key={key}>
                         <div className="card-top">
                             <img
                                 src={
